@@ -7,11 +7,12 @@
 body {
   height: 100vh;
   display: flex;
-  background: #060AB2;
+  background-size: cover;
+  display: flex;
 }
 
 .memory-game {
-  width: 640px;
+  width: 900px;
   height: 640px;
   margin: auto;
   display: flex;
@@ -20,8 +21,8 @@ body {
 }
 
 .memory-card {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
+  width: calc(15% - 10px);
+  height: calc(29% - 10px);
   margin: 5px;
   position: relative;
   transform: scale(1);
@@ -39,14 +40,23 @@ body {
   transform: rotateY(180deg);
 }
 
-.front-face,
+.front-face
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  background: #000000;
+  backface-visibility: hidden;
+}
+
 .back-face {
   width: 100%;
   height: 100%;
   padding: 20px;
   position: absolute;
   border-radius: 5px;
-  background: #1C7CCC;
+  background: #000000;
   backface-visibility: hidden;
 }
 
@@ -55,7 +65,7 @@ body {
 }
 
 .memory-card.flip{
-  display: none;
+  display: flex;
 }
 
 #dialog
@@ -83,4 +93,103 @@ body {
   align-items: center;
   align-self: center;
   justify-self: center;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+dialog
+{
+  z-index: 1;
+  width: 1000px;
+  height: 600px;
+  background-color: rgba(93, 188, 251, 0.5);
+  align-self: center;
+  justify-self: center;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+button
+{
+  width: 150px;
+  color: #ffffff;
+  background-color:rgb(16, 111, 253);
+  border-color: #1C7CCC;
+  border-radius: 30px;
+  align-self: center;
+}
+
+.megaman
+{
+  width: 200px;
+}
+
+.millieu
+{
+  display: flex;
+  flex-direction:row;
+}
+
+.top
+{
+  align-self: center;
+}
+
+hr{
+  border-color: #1C7CCC;
+}
+
+form
+{
+  border-radius: 30px;
+  margin: 20px;
+}
+
+p
+{
+  margin: 20px;
+}
+
+#pasafficher
+{
+  width: 220px;
+  color: #000000;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 30px;
+  align-self: center;
+}
+
+#winMessage.lose
+{
+  display: none;
+}
+
+#winMessage
+{
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#refresh
+{
+  font-size: 3em;
+  width: auto;
+}
+
+#WinCount
+{
+  position: absolute;
+  font-size: 2em;
+  font-family:fantasy;
+  color: darkgoldenrod;
 }

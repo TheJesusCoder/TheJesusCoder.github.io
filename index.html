@@ -7,80 +7,123 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body background="Img/R.jpg">
 
+  <div id="WinCount">
+  </div>
 
-  <dialog open="">
+  <dialog id="dia">
     <div class="boiteDeDialog" id="dialog">
     <form method="dialog">
     <div id="dialog">
+      <div class="top">
     <h1>Proget personnel</h1>
     <hr>
     <p>Design web gr.1 - Autaumne 2024</p>
-    
+      </div>
+
+    <div class="millieu">
+    <p>
+      <b>Réaliser par</b> <br>
+      Louis Hince <br><br>
+      <b>Inspiration</b><br>
+      <a href="//medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae">//medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae</a>
+    </p>
+    <img class="megaman" src="Img/megaman.png">
+  </div>
       <button id="butu">Fermer</button>
+      <button id="pasafficher" onclick="NePasAfficher()">Ne plus afficher cette fenêtre</button>
     </div>
     </form>
     </div>
   </dialog>
-
-
   <section class="memory-game">
     <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="Img/Baby.jpg" alt="Aurelia" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Opt.jpg" alt="Aurelia" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="Img/Baby.jpg" alt="Aurelia" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Opt.jpg" alt="Aurelia" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
 
     <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="Img/Bart.jpg" alt="Vue" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Blast.jpg" alt="Vue" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="Img/Bart.jpg" alt="Vue" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Blast.jpg" alt="Vue" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
 
     <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="Img/BlackTriso.jpg" alt="Angular" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Hound.jpg" alt="Angular" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="Img/BlackTriso.jpg" alt="Angular" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Hound.jpg" alt="Angular" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
 
     <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="Img/Bob.jpg" alt="Ember" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Iron.jpg" alt="Ember" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="Img/Bob.jpg" alt="Ember" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Iron.jpg" alt="Ember" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
 
     <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="Img/DogGuy.jpg" alt="Backbone" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Jazz.jpg" alt="Backbone" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="Img/DogGuy.jpg" alt="Backbone" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Jazz.jpg" alt="Backbone" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
 
     <div class="memory-card" data-framework="react">
-      <img class="front-face" src="Img/Turtle.jpg" alt="React" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Ratchet.jpg" alt="React" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
     <div class="memory-card" data-framework="react">
-      <img class="front-face" src="Img/Turtle.jpg" alt="React" />
-      <img class="back-face" src="Img/R.png" alt="JS Badge" />
+      <img class="front-face" src="Img/Ratchet.jpg" alt="React" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
+    </div>
+
+
+    <div class="memory-card" data-framework="jesus">
+      <img class="front-face" src="Img/Suns.jpg" alt="jesus" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="jesus">
+      <img class="front-face" src="Img/Suns.jpg" alt="jesus" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="ok">
+      <img class="front-face" src="Img/War.jpg" alt="ok" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="ok">
+      <img class="front-face" src="Img/War.jpg" alt="ok" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="bla">
+      <img class="front-face" src="Img/Wheel.jpg" alt="bla" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="bla">
+      <img class="front-face" src="Img/Wheel.jpg" alt="bla" />
+      <img class="back-face" src="Img/log tf.png" alt="JS Badge" />
     </div>
   </section>
-
-  <script src="scripts.js"></script>
+      <div class="lose" id="winMessage">
+        <img class="winImage" src="Img/win-png-2.png" alt="winMessage" width="800px">
+        <button id="refresh" onClick="window.location.reload();">Recommencer</button>
+      </div>
+  <script defer src="scripts.js" onload="Onload()"></script>
 </body>
 </html>
