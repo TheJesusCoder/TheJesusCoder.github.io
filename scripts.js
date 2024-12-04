@@ -31,6 +31,7 @@ function flipCard() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
+  /**si c'est un match, on augmente le pointage et active Win pour voir si il a tout matché*/
   isMatch ?  (pointage += 1,disableCards()) : unflipCards();
   Win();
 }
@@ -64,28 +65,30 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
-
+/** si pasafficher est différent de vrai, affiche le dialog */
 if (localStorage.getItem("pasafficher") !== "true")
 {
   document.getElementById("dia").showModal();
 }
-
+/** active quand le bouton "ne plus afficher ce message" est clické */
 function NePasAfficher()
 {
   localStorage.setItem("pasafficher", "true");
 }
 
 const winbox = document.getElementById("winMessage");
-
+/**créer les variables dans le stokage local et les set */
 const WinCount = document.getElementById("WinCount");
 localStorage.getItem("NombreWin");
 let nombreWin = parseInt(localStorage.getItem("NombreWin"));
 
+/**Si le nombre de win est null, le met à 0 */
 if (localStorage.getItem("NombreWin") == null)
 {
   localStorage.setItem("NombreWin", 0);
 }
 
+/**Si le pointage est le bon, on change la classe de la div Winbox pour afficher la div et change le nombre de victoire dans le stockage local */
 function Win(){
   if (pointage == 9)
     {
@@ -95,5 +98,5 @@ function Win(){
     }
   }
   
-
+/**affiche le texte dans la div du pointage */
 WinCount.innerText = "Nombre de victoire: " + nombreWin;
